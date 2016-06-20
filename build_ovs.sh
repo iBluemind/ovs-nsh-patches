@@ -17,7 +17,7 @@ echo "Removing the related OpenvSwitch configurations..."
 sudo rm /etc/openvswitch/conf.db
 
 echo "Installing the dependecies..."
-sudo apt-get install -y build-essential fakeroot debhelper autoconf automake libssl-dev bzip2 openssl graphviz python-all procps python-qt4 python-zopeinterface python-twisted-conch libtool
+sudo apt-get install -y build-essential fakeroot debhelper autoconf automake libssl-dev bzip2 openssl graphviz python-all procps python-qt4 python-zopeinterface python-twisted-conch libtool dh-autoreconf libcap-ng-dev
 
 cd openvswitch/
 sudo dpkg-checkbuilddeps
